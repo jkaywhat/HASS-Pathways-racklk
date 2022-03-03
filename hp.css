@@ -7,7 +7,7 @@ body {
   
   .blocks {
   border-radius:5px;
-  width:1250px;
+  width:100%;
   text-align:center;
 }
 
@@ -55,7 +55,7 @@ body {
 .v-nav-bar {
   background-color:white;
   height:192px;
-  width:100px;
+  width:7.83%;
   cursor:pointer;
   text-align:left;
   display:block;
@@ -116,7 +116,7 @@ body {
   top:95px;
   left:120px;
   width:1100px;
-  overflow:inherit;
+  overflow-y:auto;
   position:absolute;
   z-index:10;
 }
@@ -127,7 +127,6 @@ body {
   color: rgb(216, 213, 208);
   width:350px;
   height:100px;
-  padding:5px;
   font-size: 30px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   opacity: 0.7;
@@ -145,13 +144,14 @@ body {
   padding: 10px;
   width:210px;
   height:75px;
-  font-size: 30px;
+  font-size:17px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   opacity: 0.7;
   transition: 0.4s;
   text-decoration: wavy;
   cursor:pointer;
   float:left;
+  margin:3px;
 }
 .course-button:hover {opacity: 1}
 
@@ -161,10 +161,60 @@ body {
   left:0;
   bottom:0;
   width: 100%;
-  background-color:black;
+  background-color:blue;
   border-color:rgb(73, 145, 145);
-  border:10px;
   color: white;
   text-align: center;
   z-index:9;
+  display:none;
 }
+
+.flow {
+  display:block;
+  background-color:black;
+  top:95px;
+  width:18%;
+  border-radius:5px;
+  overflow-y:auto;
+  position:absolute;
+  z-index:10;
+}
+
+.quarter {
+  width:21%;
+}
+button.flow-button{
+  margin:5 auto;
+  display:block;
+}
+.half {
+  width:42%;
+}
+.quarter3 {
+  width:66%;
+}
+.full {
+  width:88%;
+}
+
+  .flow-button {
+    background-color:rgb(73, 145, 145);
+    border:none;
+    color:rgb(216, 213, 208);
+    padding:10px;
+    width:210px;
+    height:70px;
+    font-size:15px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    opacity:0.7;
+    transition:0.4s;
+    text-decoration:wavy;
+    text-align:center;
+    border-radius:5px;
+    cursor:pointer;
+    float:inline-start;
+  }
+  
+  
+
+  .flow-button:hover {background-color: rgb(80, 175, 175)}

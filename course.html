@@ -5,32 +5,50 @@
     <body>
     
         <div class="blocks title-bar">HASS Pathways</div>
-    <div style="height:75px;"></div>
-    <div class="blocks v-nav-bar">
+        <div style="height:75px;"></div>
+        <div class="blocks v-nav-bar">
         <button class="button v-button1" onclick="document.location='index.html'">Home</button>
         <button class="button" onclick="document.location='explore.html'">Explore</button>
         <button class="button" onclick="document.location='build.html'">Build Pathway</button>
         <button class="button v-button4" onclick="document.location='pathways.html'">My Pathways</button></div>
     
-    <p style="padding-left:225px; padding-right:5px;"" title="Disclaimer: we are NOT yet working with the registrar and advisors. Therefore, please meet with your advisors and counselors to ensure that the options you have narrowed down are appropriate and attainable for your major and class;">
-        This page is intended to let the user search for a course and see what patways correspond with said course.</p>
+        <div id="pathways" class="quarter flow" style="z-index:100;left:130px;background-color:grey;display:block;">
+            <p style="font-size:20px;text-align:center;color:black;">Course 1</p>
+            <button class="flow-button">Arts</button>
+            <button class="flow-button">Communication and Media</button>
+            <button class="flow-button">Cognitive Science</button>
+            <button class="flow-button">Economics</button>
+            <button class="flow-button">Science and Technology Studies</button>
+            <button class="flow-button">Cross-Cutting</button>
+            <button class="flow-button">Restricted</button>
+            <button class="flow-button">Other</button>
+        </div>
+        <div id="pathways" class="quarter flow" style="left:415px;background-color:aquamarine;display:block;">
+            <p style="font-size:20px;text-align:center;color:black;">Course 2</p>
+            <button class="flow-button">Arts</button>
+            <button class="flow-button">Communication and Media</button>
+            <button class="flow-button">Cognitive Science</button>
+            <button class="flow-button">Economics</button>
+            <button class="flow-button">Science and Technology Studies</button>
+            <button class="flow-button">Cross-Cutting</button>
+            <button class="flow-button">Restricted</button>
+            <button class="flow-button">Other</button>
+        </div>
+        <div id="pathways" class="half flow" style="left:700px;background-color:maroon;display:block;">
+            <p style="font-size:20px;text-align:center;color:black;">Course 3</p>
+            <button class="flow-button" onclick="selectedCourse()">Arts</button>
+            <button class="flow-button">Communication and Media</button>
+            <button class="flow-button">Cognitive Science</button>
+            <button class="flow-button">Economics</button>
+            <button class="flow-button">Science and Technology Studies</button>
+            <button class="flow-button">Cross-Cutting</button>
+            <button class="flow-button">Restricted</button>
+            <button class="flow-button">Other</button>
+        </div>
     
     <div style="height:300px"></div>
     
-    <h3 style="text-align:center;">
-        Additional Resources:</h3>
-    <p id="resources">
-        <a>All Pathways:  </a>
-        <a id="link" href="http://catalog.rpi.edu/content.php?catoid=22&navoid=542">Integrative Pathways</a>
-        <a>Ask the Registrar:  </a>
-        <a id="link" href="https://webforms2.rpi.edu/office-registrar-contact-us">Contact Registrar</a>
-        <a>Ask your Class Dean:  </a>
-        <a id="link" href="https://directory.rpi.edu/groups/3071">Contact Dean</a></p>
-    
-        <p style="font-style:italic;padding-left:5px; padding-right:5px;font-size:10px;">
-        Disclaimer: we are NOT yet working with the registrar and advisors. Therefore, please meet with your advisors and counselors to ensure that the options you have narrowed down are appropriate and attainable for your major and class.
-    </p>
-    <p><img src="emblem.jpg" alt="School of Humanities, Arts and Social Sciences Logo" width="240" height="70"></p>
+</div>
         
     </body>
     </html>
