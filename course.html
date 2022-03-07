@@ -6,33 +6,38 @@
         <div class="blocks title-bar">HASS Pathways</div>
         <div style="height:55px;"></div>
         <h2 style="text-align:center">Artificial Intelligence</h2>
+        <img class="arrow" style="top:230px;left:330px;transform:rotate(30deg);"src="arrow.png" alt="from course at end of arrow to arrow head"></p>
+        <img class="arrow" style="top:280px;left:330px;"src="arrow.png" alt="from course at end of arrow to arrow head"></p>
+        <img class="arrow" style="top:330px;left:330px;transform:rotate(-30deg);"src="arrow.png" alt="from course at end of arrow to arrow head"></p>
         <div class="blocks v-nav-bar">
-        <button class="button v-button1" onclick="document.location='index.html'">Home</button>
-        <button class="button" onclick="document.location='explore.html'">Explore</button>
+            <button class="button v-button1" onclick="document.location='index.html'">Home</button>
+            <button class="button" onclick="document.location='explore.html'">Explore</button>
         <button class="button" onclick="document.location='build.html'">Build Pathway</button>
         <button class="button v-button4" onclick="document.location='pathways.html'">My Pathways</button></div>
     
-        <div id="pathways" class="flow" style="z-index:100;left:130px;background-color:grey;display:block;">
+        <div id="pathways" class="flow" style="z-index:100;left:130px;background-color:rgb(117, 117, 117);display:block;">
             <p style="font-size:20px;text-align:center;color:black;">Course 1</p>
             <button id="c1.1" class="flow-button" onclick="c1Select()">Minds and Machines</button>
             <button id="c1.2" class="flow-button" onclick="c2Select()">AI and Society</button>
             <button id="c1.3" class="flow-button" onclick="c3Select()">Are Humans Rational?</button>
         </div>
-        <div id="pathways" class="flow" style="left:415px;background-color:aquamarine;display:block;">
+        <div id="pathways" class="flow" style="left:415px;background-color:rgb(117, 117, 117);display:block;">
             <p style="font-size:20px;text-align:center;color:black;">Course 2</p>
+            <div style="height:78px"></div>
             <button id="c2" class="flow-button" onclick="smallest()">Introduction to Cognitive Science</button>
         </div>
-        <div id="pathways" class="half flow" style="left:700px;background-color:maroon;display:block;">
+        <div id="pathways" class="half flow" style="left:700px;background-color:rgb(117, 117, 117);display:block;">
             <p style="font-size:20px;text-align:center;color:black;">Course 3</p>
-            <button id="c3" class="fb2 flow-button">Game AI</button>
-            <button id="c3" class="fb2 flow-button">Learning and Advanced Game AI</button>
-            <button id="c3" class="fb2 flow-button">Programming for Cog Sci and AI</button>
-            <button id="c3" class="fb2 flow-button">Artificial Intelligent Agents</button>
-            <button id="c3" class="fb2 flow-button">Cognitive Modeling</button>
-            <button id="c3" class="fb2 flow-button">Intelligent Virtual Agents</button>
-            <button id="c3" class="fb2 flow-button">Ethics of AI</button>
-            <button id="c3" class="fb2 flow-button">Language Endowed Intelligent Agents</button>
+            <button class="fb2 flow-button">Game AI</button>
+            <button class="fb2 flow-button">Learning and Advanced Game AI</button>
+            <button class="fb2 flow-button">Programming for Cog Sci and AI</button>
+            <button class="fb2 flow-button">Artificial Intelligent Agents</button>
+            <button class="fb2 flow-button">Cognitive Modeling</button>
+            <button class="fb2 flow-button">Intelligent Virtual Agents</button>
+            <button class="fb2 flow-button">Ethics of AI</button>
+            <button class="fb2 flow-button">Language Endowed Intelligent Agents</button>
         </div>
+
 
 <script>
 function c1Select(){
@@ -40,9 +45,12 @@ function c1Select(){
     var c2 = document.getElementById("c1.2");
     var c3 = document.getElementById("c1.3");
     if(c1.onclick){
-        c1.style.backgroundColor = "rgb(190, 90, 185)";
+        c1.style.backgroundColor = "rgb(58, 75, 75)";
+        c1.style.opacity = "1";
         c2.style.backgroundColor = "rgb(73, 145, 145)";
+        c2.style.opacity = "0.7";
         c3.style.backgroundColor = "rgb(73, 145, 145)";
+        c3.style.opacity = "0.7";
     }
 }
 function c2Select(){
@@ -50,9 +58,12 @@ function c2Select(){
     var c2 = document.getElementById("c1.2");
     var c3 = document.getElementById("c1.3");
     if(c2.onclick){
-        c2.style.backgroundColor = "rgb(190, 90, 185)";
+        c2.style.backgroundColor = "rgb(58, 75, 75)";
+        c2.style.opacity = "1";
         c1.style.backgroundColor = "rgb(73, 145, 145)";
+        c1.style.opacity = "0.7";
         c3.style.backgroundColor = "rgb(73, 145, 145)";
+        c3.style.opacity = "0.7";
     }
 }
 function c3Select(){
@@ -60,15 +71,19 @@ function c3Select(){
     var c2 = document.getElementById("c1.2");
     var c3 = document.getElementById("c1.3");
     if(c3.onclick){
-        c3.style.backgroundColor = "rgb(190, 90, 185)";
+        c3.style.backgroundColor = "rgb(58, 75, 75)";
+        c3.style.opacity = "1";
         c1.style.backgroundColor = "rgb(73, 145, 145)";
+        c1.style.opacity = "0.7";
         c2.style.backgroundColor = "rgb(73, 145, 145)";
+        c2.style.opacity = "0.7";
     }
 }
 function smallest(){
     var c1 = document.getElementById("c2");
     if(c1.onclick){
-        c1.style.backgroundColor = "rgb(190, 90, 185)";
+        c1.style.backgroundColor = "rgb(58, 75, 75)";
+        c1.style.opacity = "1";
     }
 }
 </script>
