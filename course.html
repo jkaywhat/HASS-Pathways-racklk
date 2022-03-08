@@ -6,9 +6,9 @@
         <div class="blocks title-bar">HASS Pathways</div>
         <div style="height:55px;"></div>
         <h2 style="text-align:center">Artificial Intelligence</h2>
-        <img class="arrow" style="top:230px;left:330px;transform:rotate(30deg);"src="arrow.png" alt="from course at end of arrow to arrow head"></p>
-        <img class="arrow" style="top:280px;left:330px;"src="arrow.png" alt="from course at end of arrow to arrow head"></p>
-        <img class="arrow" style="top:330px;left:330px;transform:rotate(-30deg);"src="arrow.png" alt="from course at end of arrow to arrow head"></p>
+        <img id="top" class="arrow" style="top:230px;left:330px;transform:rotate(30deg);"src="arrow.png" alt="from course at end of arrow to arrow head"></p>
+        <img id="mid" class="arrow" style="top:280px;left:330px;"src="arrow.png" alt="from course at end of arrow to arrow head"></p>
+        <img id="bot" class="arrow" style="top:330px;left:330px;transform:rotate(-30deg);"src="arrow.png" alt="from course at end of arrow to arrow head"></p>
         <div class="blocks v-nav-bar">
             <button class="button v-button1" onclick="document.location='index.html'">Home</button>
             <button class="button" onclick="document.location='explore.html'">Explore</button>
@@ -40,43 +40,49 @@
 
 
 <script>
+var c1 = document.getElementById("c1.1");
+var c2 = document.getElementById("c1.2");
+var c3 = document.getElementById("c1.3");
+var top_a = document.getElementById("top");
+var mid_a = document.getElementById("mid");
+var bot_a = document.getElementById("bot");
 function c1Select(){
-    var c1 = document.getElementById("c1.1");
-    var c2 = document.getElementById("c1.2");
-    var c3 = document.getElementById("c1.3");
     if(c1.onclick){
         c1.style.backgroundColor = "rgb(58, 75, 75)";
         c1.style.opacity = "1";
+        top_a.style.display = 'block';
         c2.style.backgroundColor = "rgb(73, 145, 145)";
         c2.style.opacity = "0.7";
+        mid_a.style.display = 'none';
         c3.style.backgroundColor = "rgb(73, 145, 145)";
         c3.style.opacity = "0.7";
+        bot_a.style.display = 'none';
     }
 }
 function c2Select(){
-    var c1 = document.getElementById("c1.1");
-    var c2 = document.getElementById("c1.2");
-    var c3 = document.getElementById("c1.3");
     if(c2.onclick){
         c2.style.backgroundColor = "rgb(58, 75, 75)";
         c2.style.opacity = "1";
+        mid_a.style.display = 'block';
         c1.style.backgroundColor = "rgb(73, 145, 145)";
         c1.style.opacity = "0.7";
+        top_a.style.display = 'none';
         c3.style.backgroundColor = "rgb(73, 145, 145)";
         c3.style.opacity = "0.7";
+        bot_a.style.display = 'none';
     }
 }
 function c3Select(){
-    var c1 = document.getElementById("c1.1");
-    var c2 = document.getElementById("c1.2");
-    var c3 = document.getElementById("c1.3");
     if(c3.onclick){
         c3.style.backgroundColor = "rgb(58, 75, 75)";
         c3.style.opacity = "1";
+        bot_a.style.display = 'block';
         c1.style.backgroundColor = "rgb(73, 145, 145)";
         c1.style.opacity = "0.7";
+        top_a.style.display = 'none';
         c2.style.backgroundColor = "rgb(73, 145, 145)";
         c2.style.opacity = "0.7";
+        mid_a.style.display = 'none';
     }
 }
 function smallest(){
